@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            list-style-type: lower-alpha;
+            font-weight: bold;
+        }
+        .blue-list{
+            color: blue;
+            list-style-type: square;
+        }
+        .numeric-list{
+            list-style-type: decimal;
+        }
+        .upper-alpabetic-list{
+            list-style-type: upper-alpha;
+        }
+        .roman-number-list{
+            list-style-type: upper-roman;
+        }
+        .red-font{
+            color:red
+        }
+    </style>
+</head>
+<body>
+    <p>a.)Rendezett lista</p>
+        <ul>
+            <li>piros</li>
+            <li>kék</li>
+            <li>sárga</li>
+            <li>barna</li>
+        </ul>
+        <ul class="blue-list">
+            <li>sárga</li>
+            <li>fehér</li>
+            <li>zöld</li>
+            <li>kék</li>
+        </ul>
+
+    <p>b.)Rendezetlen lista</p>
+    <ol class="numeric-list">
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    </ol>
+
+    <p>c.) Nagybetűk - tartalma: itt a kedvenc színek</p>
+    <ol class="upper-alpabetic-list">
+        <li>pink</li>
+        <li>kék</li>
+        <li>sárga</li>
+        <li>barna</li>
+    </ol>
+
+    <p>d.)Romai számok</p>
+    <ol class="roman-number-list">
+        <li>I.ÉVF</li>
+        <li>II.ÉVF</li>
+        <li>III.ÉVF</li>
+    </ol>
+
+    <p>E.)Inline stílus legyen</p>
+    <ol style="list-style-type: upper-alpha; color: red;">
+        <li>sárga</li>
+        <li>pink</li>
+        <li>bíbor</li>
+        <li>tűrkíz</li>
+    </ol>
+
+    <p>f.) HTML Description Lists</p>
+    <dl style="color:aqua">
+        <dt>Varjú</dt>
+        <dd>-madár</dd>
+        <dd>-tojást rak</dd>
+
+        <dt>Farkas</dt>
+        <dd>-emlős</dd>
+        <dd>-ragadozó</dd>
+
+        <dt>Róka</dt>
+        <dd>-emlős</dd>
+        <dd>ragadozó</dd>
+    </dl>
+
+    <p>g.) Beágyazott HTML listák: Kedvenc reggeli italaim</p>
+    <p class="red-font">Kedvenc reggeli italaim</p>
+    <ul>
+        <li>Kávé</li>
+        <li>Tea</li>
+            <ul>
+                <li>Fekete tea</li>
+                <li>Zöld tea</li>
+            </ul>
+        <li>Tej</li>
+    </ul>
+
+    <p>g.) Beágyazott HTML listák: Kedvenc reggeli italaim</p>
+    <ol >
+        <li>LÁ</li>
+        <li>KI</li>
+        <li>DK</li>
+        <li>BK</li>
+        <li>NK</li>
+    </ol>
+</body>
+</html>
