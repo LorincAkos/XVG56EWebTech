@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,td{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        td{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Táblázat készítése</h2>
+    <h3>Első táblázatunk</h3>
+    <table style="table-layout: fixed;">
+        <tr style="height: 100px; background-color: red;">
+            <td>1.sor 1.elem</td>
+            <td style="vertical-align: center; text-align: end;">1.sor 2.<br>elem</td>
+            <td style="vertical-align: bottom; text-align: center;">1.sor 3.<br>elem</td>
+        </tr>
+        <tr style="background-color: bisque;">
+            <td>2.sor 4.<br>elem</td>
+            <td > <div style="overflow: scroll; height: 100px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae praesentium ipsum dignissimos magnam dolorum earum aperiam, maiores voluptates quibusdam quidem obcaecati libero ad maxime pariatur distinctio dicta ea excepturi eius.</div></td>
+            <td style="text-align: end; vertical-align: top;">2.sor 6.<br>elem</td>
+        </tr>
+        <tr style="height: 100px; background-color: bisque;">
+            <td>3.sor 7.<br>elem</td>
+            <td style="background-color: magenta;">3.sor 8.<br>elem</td>
+            <td>3.sor 9.<br>elem</td>
+        </tr>
+    </table>
+</body>
+</html>
