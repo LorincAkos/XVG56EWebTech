@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fejlec{
+            font-size: 18pt;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="fejlec">
+       <h2> Videó lejátszása_XVG56E</h2>
+    </header>
+    <main>
+        <section>
+
+            <video id="video" width="400" controls>
+                <source src="XVG56E_video.mp4" type="video/mp4">
+                <source src="mov_bbb.ogg" type="video/ogg">
+                Your browser does not support HTML video.
+            </video>
+            <br><br>
+        
+            <button onclick="play()">Indítás</button>
+            <button onclick="pause()">Leállítás</button>
+            &nbsp;&nbsp;
+            <button onclick="playPause()">Indítás/Leállítás</button>
+
+            <br><br>
+        </section>
+            
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script> 
+        var myVideo = document.getElementById("video"); 
+        
+        function playPause() { 
+          if (myVideo.paused) 
+            myVideo.play(); 
+          else 
+            myVideo.pause(); 
+        } 
+        
+        function play() { 
+            myVideo.play();
+        } 
+        
+        function pause() { 
+            myVideo.pause(); 
+        } 
+        
+        function makeNormal() { 
+            myVideo.width = 420; 
+        } 
+        </script> 
+</body>
+</html>
