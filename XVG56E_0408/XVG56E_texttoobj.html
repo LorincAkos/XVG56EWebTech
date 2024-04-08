@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2>JSON Text konvertálása JavaScript objektummá!</h2>
+     <p id="name"></p>
+     <p id="number"></p>
+     <p id = "city"></p>
+     <p id = "uni"></p>
+    <script>
+        let txt = '{"name":"Akos" , "number": 3770 , "city" : "Sajószentpéter" , "uni": "Miskolci Egyetem"}';
+        let obj = JSON.parse(txt);
+        document.getElementById("name").innerHTML = obj.name;
+        document.getElementById("number").innerHTML = obj.number;
+        document.getElementById("city").innerHTML = obj.city;
+        document.getElementById("uni").innerHTML = obj.uni;
+    </script>
+</body>
+</html>
