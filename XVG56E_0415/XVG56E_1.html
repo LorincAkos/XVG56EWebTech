@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery_3.1.7.js"></script>
+</head>
+<body>
+    <h2>jQuery feladatok</h2>
+
+    <p>A jQuery egy JavaScipt programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
+    <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+
+    <button>Kattintson ide - a bejegyzés elrejtéséhez.</button>
+    <br>
+    ME weboldal <a href="https://www.uni-miskolc.hu">Miskolci Egyetem</a>
+
+    <script>
+        $(document).ready(function(){
+
+            $("button").click(function(){
+                $("p").toggle();
+            });
+
+        });
+    </script>
+</body>
+</html>

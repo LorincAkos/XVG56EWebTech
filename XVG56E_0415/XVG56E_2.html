@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery_3.1.7.js"></script>
+</head>
+<body>
+    <h2>jQuery feladatok</h2>
+
+    <p>A jQuery egy JavaScipt programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
+    <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+    
+    <ul id="list1">
+        <li>tíz</li>
+        <li>húsz</li>
+        <li>harminc</li>
+    </ul>
+
+    <ul id="list2">
+        <li>tizedik</li>
+        <li>huszadik</li>
+        <li>harmincadik</li>
+    </ul>
+    <table>
+
+        <tr>
+            <td>1111</td>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+        <tr>
+            <td>2222</td>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+        <tr>
+            <td>3333</td>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+        <tr>
+            <td>4444</td>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+        <tr>
+            <td>5555</td>
+            <td>aaaa</td>
+            <td>bbbb</td>
+        </tr>
+    </table>
+
+    <br>
+    <button id="button1">Kattintson ide 1!</button>
+    <button id="button2">Kattintson ide 2!</button>
+    <button id="button3">Kattintson ide 3!</button>
+    <button id="button4">Kattintson ide 4!</button>
+    <button id="button5">Kattintson ide 5!</button>
+
+    <br>
+    <span id="linktext">jQuery:</span> <a href="https://www.uni-miskolc.hu">Jquery weboldal</a>
+
+    <script>
+        $(document).ready(function(){
+            
+        });
+        
+        $("#button1").click(function(){
+            $("#list1 li:first").remove();
+            $("#list2 li:first").remove();
+            $("a").hide();
+        });
+
+        $("#button2").click(function(){
+            $("#list1 li:first").remove();
+            $("#list2 li:first").remove();
+            $("a").hide();
+            $("#button2").hide();
+        });
+
+        $("#button3").click(function(){
+            $("#list1 li:first").remove();
+            $("#list2 li:first").remove();
+            $("a").hide();
+            $("h2").hide();
+        });
+
+        $("#button4").click(function(){
+            $("#list1 li:first").remove();
+            $("#list2 li:first").remove();
+            $("a").hide();
+            $("#linktext").hide();
+        });
+        
+        $("#button5").click(function(){
+            $("#list1 li:first").remove();
+            $("#list2 li:first").remove();
+            $("a").hide();
+            $("table tr:odd").hide();
+        });
+            
+    </script>
+</body>
+</html>
