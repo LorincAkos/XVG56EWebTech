@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery_3.1.7.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#gomb").click(function(){
+                $("#gomb").text("PTI Gomb");
+            })
+
+            $("#ujgomb").click(function(){
+                var r= $('<input type="button" value="új gomb"/>');
+                $("body").append(r);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button>Szöveg hozzáadása</button>
+    <button id="gomb">Gomb</button>
+    <button id="ujgomb">Új gomb felvétele</button>
+    <button>Fejléc felvétele</button>
+    <button>Alcím felvétele</button>
+    <button>Űrlap fejléc felvétele</button>
+
+    <br><br>
+
+    <div id="box" style="height: 150px; width: 150px; background-color: aqua; position: relative;">
+        ME - GÉIK - PTI <br><br> .....</div>
+
+    <br>
+
+    
+    <p style="font-weight: bold;">Név: <input type="text" id="nev"></p>
+    <p style="font-weight: bold;">E-mail: <input type="text"></p>
+    <p style="font-weight: bold;">Jelszó: <input type="text"></p>
+
+    <br>
+    
+    <button>Jelentkezés</button>
+
+    <br>
+    <p>Forrás: <a id="link" href="https://www.tutorialspoint.com/jquery/index.htm">https://www.tutorialspoint.com/jquery/index.htm</a></p>
+</body>
+</html>

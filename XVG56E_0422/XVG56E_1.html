@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery_3.1.7.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#animacio").click(function(){
+                $("div").animate({left: '300px', width: '300px'},1000);
+                $("div").animate({top: '100px', width: '+=50px'},1000);
+                $("div").animate({left: '0px', opacity: 0.4},1000);
+                $("div").animate({top: '0px', width: '150px'},1000);
+            })
+
+            $("#elrejt").click(function(){
+                $("p").toggle(2000);
+            });
+
+            $("#összeki").click(function(){
+                $("div").animate({height: 'hide'},1000);
+                $("div").animate({height: 'show'},1000);
+                $("div").animate({left: '300px', width: '300px'},1000);
+            });
+
+        })
+    </script>
+
+</head>
+<body>
+    <h2>jQuerry feladatok - Animáció</h2>
+
+    <button id="animacio">Animáció indítása</button>
+    <button id="elrejt">Bekezdés elrejtése</button>
+    <button id="összeki">Összecsuk/kinyit</button>
+
+    <p>A jQuery egy JavaScipt programozói könyvtár, amelyet John Resig kezdett fejleszteni.</p>
+    <p>Elterjedtnek tekinthető, segítségével könnyen bejárható egy HTML oldal DOM-ja.</p>
+    <p>Effekteket és animációkat adhatunk HTML elemeinkhez. Számtalan plugint írtak hozzá.</p>
+
+    <div style="height: 50px; width: 150px; background-color: aqua; position: relative;">
+        ME - GÉIK - PTI</div>
+</body>
+</html>
