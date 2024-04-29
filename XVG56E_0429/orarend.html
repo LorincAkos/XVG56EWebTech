@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="jquery_3.1.7.js"></script>
+</head>
+<body>
+    <div id="data" style="background-color: gray;">Info</div>
+    <button id="getData">Get Data</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#getData").click(function(event){
+                $.getJSON('orarend.json', function(jd){
+                    $("#data").html('<h2>Miskolci Egyetem </h2>');
+                    $("#data").append('<p>Cím: '+ jd. + '</p>');
+                    $('#data').append('<p> Sex: ' + jd. + '</p>');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+{
+    "LA_orarend": {
+        "kurzus": [
+            {
+                "Kurzusnev": "WebTechnológia alapjai",
+                "idopont": {
+                    "nap": "hetfő",
+                    "tol": 14,
+                    "ig":16
+                },
+                "helysin": "In103",
+                "oktato": "Dr. Bednarik László",
+                "szak": "MI",
+
+                "Cim": 
+                {
+                    "street": "Egyetmváros",
+                    "City" : "Miskolc",
+                    "code": "1021"
+                },
+                "phone number":[
+                    {
+                        "type": "Vezetékes",
+                        "number": 123456789
+                    },
+                    {
+                        "type": "Mobil",
+                        "number": 12345678
+                    }
+                ]
+                }
+            
+
+        ]
+
+        
+    }
+}
