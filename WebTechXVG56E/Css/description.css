@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+}
+#content{
+    
+    background-color: #555;
+}
+table{
+    margin-left: 10%;
+    margin-right: 25%;
+}
+td{
+    padding-left: 5px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
+#image{
+    width: 350px;
+}
+
+#title{
+    margin-top: 60px;
+    margin-left: 12%;
+    margin-bottom: 0;
+}
+
+#score-container{
+    background-color: rgb(0, 110, 253);
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 100px;
+}
+
+.text-white{
+    color: white;
+    font-size: large;
+}
+
+.text{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.text p{
+    padding: 5px;
+}
+
+.bg-red{
+    background-color: rgb(167, 0, 0);
+    height: 10px;
+}
+
+.info-width{
+    width: 35%;
+}
+
+#video-container{
+    padding-left: 12%;
+    margin-top: 20px;
+}
+#video{
+    width: 70%;
+}
+#video-buttons{
+    padding-left: 30%;
+    margin-bottom: 30px;
+}
+
+#video-buttons button{
+    width: 120px;
+    height: 30px;
+}
+
+#playPause-button{
+    background-color: rgb(167, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    
+}
+
+#playPause-button:hover{
+    opacity: 0.5;
+}
