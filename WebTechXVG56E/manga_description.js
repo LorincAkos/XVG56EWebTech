@@ -4,7 +4,6 @@ function loadData(id,itemId){
 fetch("Datas/manga_data.json")
             .then(response => response.json())
             .then(data => {
-                // Find the object with matching itemid
                 const item = data.find(item => item.pageTitle === id);
                 console.log(item);
                 let title = '';
@@ -21,7 +20,6 @@ fetch("Datas/manga_data.json")
                 let genres = '';
                 let rating = '';
 
-                // Check if item1 is found
                 if (item) {
                     sidebar += `<h2 id="pageTitle">${item.pageTitle}</h2>
                                 <ul>`
@@ -32,10 +30,8 @@ fetch("Datas/manga_data.json")
                     });
                     sidebar += `</ul>`;
 
-                    // Find the item with id 1 within item1's items array
                     const subItem = item.items.find(subItem => subItem.itemId === parseInt(itemId));
 
-                    // Check if subItem1 is found
                     if (subItem) {
                         console.log("Item with itemid 1 and id 1 found:");
                         console.log(subItem);
@@ -60,7 +56,6 @@ fetch("Datas/manga_data.json")
                     console.log("Item with itemid 1 not found.");
                 }
 
-                // Display HTML
                 
                 document.getElementById("list").innerHTML = sidebar;
                 document.getElementById("title").innerHTML = title;
@@ -84,7 +79,6 @@ const tmp = urlParams.get('tmp');
 
 const id = tmp.split('|')[0];
 const itemId = tmp.split('|')[1];
-// összeraknia két paramétert majd splittelni ahogy kell. Igy csak a value-nak kell megadni és el lehet érni amit kell. very gud :p
 console.log(id);
 console.log(itemId);
 

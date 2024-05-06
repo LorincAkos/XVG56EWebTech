@@ -2,10 +2,8 @@ function loadData(id){
     fetch("Datas/manga_data.json")
                 .then(response => response.json())
                 .then(data => {
-                    // Find the object with matching itemid
                     const item = data.find(item => item.pageTitle === id);
     
-                    // Build HTML to display item data
                     let html = '';
                     let title = `<h2 id ="pageTitle" itemId ="${item.pageTitle}" >${item.pageTitle}</h2>`;
                     if (item) {
@@ -21,7 +19,6 @@ function loadData(id){
                         html = '<p>No data found for the selected item ID.</p>';
                     }
     
-                    // Display HTML
                     document.getElementById('title').innerHTML = title;
                     document.getElementById('content').innerHTML = html;
                 })
