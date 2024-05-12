@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ</title>
+  <link rel="stylesheet" href="Css/header.css">
+  <link rel="stylesheet" href="Css/sidebar.css">
+  <link rel="stylesheet" href="Css/footer.css">
+  <link rel="stylesheet" href="Css/faq.css">
+  <link rel="stylesheet" href="Css/slideshow.css">
+  <script src="jquery_3.1.7.js"></script>
+  <script src="button_control.js"></script>
+</head>
+<body style="background-color: #555;">
+    <header class = "header">
+            <nav class="left-section">
+              <button class="left-section-button" id="home_page">Home</button>
+              <button class="left-section-button" id="anime_page" value="Top 10 Anime">Anime</button>
+              <button class="left-section-button" id="manga_page" value="Top 10 Manga">Manga</button>
+              <button class="left-section-button" id="faq_page">FAQ</button>
+            </nav>
+            <div class="right-section">
+                <button class="profile-button" id="form">
+                    Rate page
+                </button>
+            </div>
+    </header>
+    
+    <main>
+    
+        <section id="main-content">
+
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="Image/azur_img.jpg" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="Image/blue_img.jpg" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="Image/tg_img.jpg" alt="Slide 3">
+                </div>
+            </div>
+            <div class="bg-red"></div>
+
+            <div class="faq-item">
+                <div class="faq-question large-text">Mi ez a weboldal?</div>
+                <div class="faq-answer">
+                  <p>Ez az oldal egy online közösségi platform, amely lehetővé teszi az animék és mangák követését, értékelését és megosztását a felhasználók között. Regisztráció után hozzáadhatsz animéket a listádhoz, oszthatod azokat barátaiddal, és interakcióba léphetsz más rajongókkal közösségi fórumokon és csoportokban. Emellett lehetőséged van véleményeket és értékeléseket megosztani az általad látott művekről.</p>
+                </div>
+            </div>
+              
+            <div class="faq-item">
+                <div class="faq-question large-text">Mire használjuk?</div>
+                <div class="faq-answer">
+                  <p>Az oldalt arra használjuk, hogy a felhasználók megosszák és szervezzék az animekkel kapcsolatos élményeiket és információikat. Ez egy közösségi platform, ahol a felhasználók létrehozhatnak saját profilt, hozzáadhatnak animéket az "előfordulásaim" listájukhoz, oszthatják meg véleményüket és értékeléseiket az általuk látott művekről, valamint kapcsolatba léphetnek más anime rajongókkal. Az oldal célja az animek világában való eligazodás megkönnyítése, valamint egy olyan közösség létrehozása, ahol az emberek megoszthatják szenvedélyüket és érdeklődési körüket az anime és a manga iránt.</p>
+                </div>
+            </div>
+              
+            <div class="faq-item">
+                <div class="faq-question large-text">Mit tudunk csinálni az oldalon?</div>
+                <div class="faq-answer">
+                  <p>Az eddig kiadott animák és mangák között tudunk válogatni és megkeresni a mi érdeklődési körünk megfelelőt.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question large-text">Miért jó értékelni az oldalt?</div>
+                <div class="faq-answer">
+                  <p>Az oldal értékelésével egy statisztikát kapunk, hogy a felhasználók átlagos életkoráról és az álltaluk preferált műfajokról.</p>
+                </div>
+            </div>
+              
+            <div class="faq-item">
+                <div class="faq-question large-text">Nem található manga/anime?</div>
+                <div class="faq-answer">
+                  <p>Ellenőrizd, hogy jól kerestél-e az adott mangára/animére, ha igen akkor lehetséges, hogy még nem adták ki és nem vettük fel az adatokhoz.</p>
+                </div>
+            </div>
+              
+            <div class="faq-item">
+                <div class="faq-question large-text">Lesz-e letölthető telefonos alkalmazás?</div>
+                <div class="faq-answer">
+                  <p>A közeljövőbe várható egy alkalmazás megjelenése, amint elkészül értesíteni fogunk minden felhasználót.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="bg-red" style="margin-top: 30px;"></div>
+    
+<footer>
+    <div>
+        <p>&copy; 2024 AnimeList</p>
+    </div>
+</footer>
+<script src="imageslide_control.js"></script>
+
+<script>
+  // Get all FAQ questions
+  var faqQuestions = document.querySelectorAll('.faq-question');
+
+  // Loop through each FAQ question
+  faqQuestions.forEach(function(question) {
+    // Add click event listener to each question
+    question.addEventListener('click', function() {
+      // Toggle the visibility of the answer when question is clicked
+      var answer = this.nextElementSibling;
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
