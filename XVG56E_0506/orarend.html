@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="jquery_3.1.7.js"></script>
+</head>
+<body>
+    <div id="data" style="background-color: gray;">Info</div>
+    <button id="getData">Get Data</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#getData").click(function(event){
+                $.getJSON('orarend.json', function(jd){
+                    let data =jd.LA_orarend.kurzus[0];
+                    
+                    $("#data").html('<h2>Miskolci Egyetem </h2>');
+                    $("#data").append('<p>Cím: '+data.cim.code + ' '+ data.cim.city +' '+ data.cim.street +'</p>');
+                    $('#data').append('<p>Telefonszámok: ' + jd  +'</p>');
+                    $('#data').append('<ul><li>' + data.phoneNumber[0].type+': '+ data.phoneNumber[0].number  +'</li> <li>' + data.phoneNumber[1].type+': '+ data.phoneNumber[1].number  +'</li><ul>');
+                    
+                    $("#data").append('<h2>MI Órarend 2024 tavasz - részlet</h2>');
+                    $('#data').append('<p>Kurzusnév: ' + data.kurzusnev  +'</p>');
+                    $('#data').append('<p>Oktató: ' + data.oktato  +'</p>');
+                    $('#data').append('<p>Szak: ' + data.szak  +'</p>');
+                    $('#data').append('<strong>Időpont:</strong><br>');
+                    $('#data').append('<span>&nbsp;&nbsp;Nap: '+ data.idopont.nap+'</span><br>');
+                    $('#data').append('<span>&nbsp;&nbsp;Tól: '+ data.idopont.tol+'</span><br>');
+                    $('#data').append('<span>&nbsp;&nbsp;Ig: '+ data.idopont.ig+'</span><br>');
+                    $('#data').append('<p>Helyszín: ' + data.helyszin  +'</p>');
+
+                });
+            });
+        });
+    </script>
+</body>
+</html>
